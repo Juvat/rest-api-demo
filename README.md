@@ -1,10 +1,10 @@
 # Demo project for REST API Tests
 
-## Prerequsities:
+## Prerequisites:
 
 * Java 11 or newer
 * Maven
-* Allure commandline (installation instrictions can be found here: https://docs.qameta.io/allure/#_installing_a_commandline)
+* Allure commandline (installation instructions can be found here: https://docs.qameta.io/allure/#_installing_a_commandline)
 
 ## Launch all tests
 
@@ -17,10 +17,18 @@ If you want to run only the regression tests execute:
 If you want to run only the smoke tests execute:
 `mvn clean test -DtestGroup=smoke`
 
+## Setting parameters dynamically
+
+The tests show two approaches offered by TestNG when it comes to parametrized tests. One is DataProvider which uses an `xml` file to store the test's parameters. The other is using `@Parameters` annotation.
+
+Test named `shouldReturnBeersAboveGivenAbv` can be launched with dynamically set _Abv_ parameter. This can be done by running the following command (i.e.: Abv = 7):
+`mvn clean test -Dabv="7" -Dtest=BeersTest`
+
 ## Generating test report
 
 To generate a test report after the tests are finished navigate to `target` directory and there run:
 `allure serve`
 
 This will generate a test report and automatically open it in your default browser.
-NOTE: Allure commandline must be installed to generate a report, see Prereqisities for details.
+
+NOTE: Allure commandline must be installed to generate a report, see Prerequisites for details.

@@ -3,6 +3,7 @@ package pl.juvat.tests;
 import io.qameta.allure.Owner;
 import io.restassured.http.ContentType;
 import org.joda.time.DateTime;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pl.juvat.data_provider.XMLTestConfig;
 import pl.juvat.data_provider.XMLTestDataProvider;
@@ -53,9 +54,9 @@ public class BeersTest extends TestCase {
         assertThat(beers).allSatisfy(beer -> assertThat(beer.getFirstBrewed()).isBefore(date));
     }
 
-    @Test(groups = {"smoke", "regression"}, dataProvider = "XmlDataProvider", dataProviderClass = XMLTestDataProvider.class)
-    public void shouldReturnBeersAboveGivenAbv(final XMLTestConfig config) {
-        final var abv = config.get("abv");
+    @Parameters("abv")
+    @Test(groups = {"smoke", "regression"})
+    public void shouldReturnBeersAboveGivenAbv(final String abv) {
         // @formatter:off
         final var beers =
         given(spec)

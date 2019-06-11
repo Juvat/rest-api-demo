@@ -69,7 +69,6 @@
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
-
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>

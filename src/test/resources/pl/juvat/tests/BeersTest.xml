@@ -22,13 +22,6 @@
                 <parameter name="date">2006-05-02</parameter>
             </parameters>
         </test>
-        <!-- shouldReturnBeersAboveGivenAbv -->
-        <test>
-            <name>shouldReturnBeersAboveGivenAbv</name>
-            <parameters>
-                <parameter name="abv">6</parameter>
-            </parameters>
-        </test>
         <!-- shouldReturnPaginatedResults -->
         <test>
             <name>shouldReturnPaginatedResults</name>
