@@ -24,6 +24,11 @@ The tests show two approaches offered by TestNG when it comes to parametrized te
 Test named `shouldReturnBeersAboveGivenAbv` can be launched with dynamically set _Abv_ parameter. This can be done by running the following command (i.e.: Abv = 7):
 `mvn clean test -Dabv="7" -Dtest=BeersTest`
 
+## Parallel execution
+
+By default tests are running in parallel. This can be changed by passing `-Dthreads=n` (where n is desired number of threads) when launching the tests.
+Also, parallel stratedy can be changed by passing `-DparallelMethod=tests` - available options: tests|classes|instances|methods(default). 
+
 ## Generating test report
 
 To generate a test report after the tests are finished navigate to `target` directory and there run:
