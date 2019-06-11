@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Beers API Tests" verbose="1">
+
+    <test name="Beers API Tests">
+        <classes>
+            <class name="pl.juvat.tests.BeersTest"/>
+        </classes>
+    </test>
+
+</suite>

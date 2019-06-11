@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestData>
+    <title>Beers Test</title>
+    <description>Tests for beers endpoint</description>
+    <tests>
+        <!-- shouldReturnBeersBrewedBefore -->
+        <test>
+            <name>shouldReturnBeersBrewedBefore</name>
+            <parameters>
+                <parameter name="date">2007-11-15</parameter>
+            </parameters>
+        </test>
+        <test>
+            <name>shouldReturnBeersBrewedBefore</name>
+            <parameters>
+                <parameter name="date">2017-12-12</parameter>
+            </parameters>
+        </test>
+        <test>
+            <name>shouldReturnBeersBrewedBefore</name>
+            <parameters>
+                <parameter name="date">2006-05-02</parameter>
+            </parameters>
+        </test>
+        <!-- shouldReturnBeersAboveGivenAbv -->
+        <test>
+            <name>shouldReturnBeersAboveGivenAbv</name>
+            <parameters>
+                <parameter name="abv">6</parameter>
+            </parameters>
+        </test>
+        <!-- shouldReturnPaginatedResults -->
+        <test>
+            <name>shouldReturnPaginatedResults</name>
+            <parameters>
+                <parameter name="page">2</parameter>
+                <parameter name="size">5</parameter>
+            </parameters>
+        </test>
+    </tests>
+</TestData>

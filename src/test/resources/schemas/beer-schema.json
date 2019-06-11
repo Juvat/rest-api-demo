@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "info": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "abv": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "abv"
+      ]
+    }
+  }
+}
