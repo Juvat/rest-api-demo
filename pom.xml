@@ -32,7 +32,7 @@
         <allure-maven.version>2.10.0</allure-maven.version>
         <lombok.version>1.18.8</lombok.version>
         <logback-classic.version>1.2.3</logback-classic.version>
-        <snakeyaml.version>1.24</snakeyaml.version>
+        <snakeyaml.version>1.26</snakeyaml.version>
         <json-schema-validator.version>4.0.0</json-schema-validator.version>
         <guava.version>27.0.1-jre</guava.version>
         <jackson-databind.version>2.9.9</jackson-databind.version>
