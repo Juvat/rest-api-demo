@@ -38,7 +38,7 @@
         <jackson-databind.version>2.9.9</jackson-databind.version>
         <jackson-dataformat-xml.version>2.9.9</jackson-dataformat-xml.version>
         <jackson-datatype-joda.version>2.9.9</jackson-datatype-joda.version>
-        <woodstox-core.version>5.2.1</woodstox-core.version>
+        <woodstox-core.version>5.4.0</woodstox-core.version>
         <jaxb.version>2.3.0</jaxb.version>
     </properties>
 
